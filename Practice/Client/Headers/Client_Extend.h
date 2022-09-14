@@ -1,0 +1,17 @@
+#pragma once
+
+#include "stdafx.h"
+
+const unsigned int g_WINCX = 1280;
+const unsigned int g_WINCY = 720;
+
+enum SCENEID { SCENE_STATIC, SCENE_LOGO, SCENE_STAGE, SCENE_BOSS, SCENE_END };
+
+enum OBJECT_TYPE {OBJ_PLAYER, OBJ_MONSTER, OBJ_BULLET, OBJ_COLLIDER, OBJ_END};
+
+typedef enum TagState { STATE_IDLE, STATE_RUN, STATE_ATTACK, STATE_SWAP, STATE_RELOAD, STATE_END }STATE;
+
+typedef enum TagWeapon { WEAPON_PISTOL, WEAPON_RIFFLE, WEAPON_SNIPER, WEAPON_END }WEAPON;
+
+extern HWND g_hWnd;
+extern HINSTANCE g_hInst;

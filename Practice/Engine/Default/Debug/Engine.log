@@ -1,0 +1,74 @@
+﻿  Engine.vcxproj -> C:\Users\ejddj\Desktop\작업물들_mk2\Practice\Engine\Default\..\Bin\Engine.dll
+  Engine.vcxproj -> ..\Bin\Engine.pdb (Full PDB)
+  ..\Bin\Shader\Shader_Blend.fx
+  ..\Bin\Shader\Shader_Collider.fx
+  ..\Bin\Shader\Shader_LightAcc.fx
+          3개 파일이 복사되었습니다.
+  ..\Headers\AnimationControl.h
+  ..\Headers\Base.h
+  ..\Headers\Camera.h
+  ..\Headers\Cell.h
+  ..\Headers\Collider.h
+  ..\Headers\Component.h
+  ..\Headers\Component_Manager.h
+  ..\Headers\Device.h
+  ..\Headers\Engine_Defines.h
+  ..\Headers\Engine_Function.h
+  ..\Headers\Engine_Functor.h
+  ..\Headers\Engine_Macro.h
+  ..\Headers\Engine_Struct.h
+  ..\Headers\Engine_TypeDef.h
+  ..\Headers\fmod.h
+  ..\Headers\fmod_codec.h
+  ..\Headers\fmod_dsp.h
+  ..\Headers\fmod_errors.h
+  ..\Headers\fmod_memoryinfo.h
+  ..\Headers\fmod_output.h
+  ..\Headers\Frustum.h
+  ..\Headers\GameObject.h
+  ..\Headers\HierarchyLoader.h
+  ..\Headers\Input.h
+  ..\Headers\Key.h
+  ..\Headers\Layer.h
+  ..\Headers\Light.h
+  ..\Headers\Light_Manager.h
+  ..\Headers\Management.h
+  ..\Headers\Mesh_Dynamic.h
+  ..\Headers\Mesh_Static.h
+  ..\Headers\Navigation.h
+  ..\Headers\Object_Manager.h
+  ..\Headers\Picking.h
+  ..\Headers\PipeLine.h
+  ..\Headers\QuadTree.h
+  ..\Headers\Renderer.h
+  ..\Headers\Scene.h
+  ..\Headers\Shader.h
+  다른 프로세스가 파일을 사용 중이기 때문에 프로세스가 액세스 할 수 없습니다.
+  ..\Headers\Sound.h
+  ..\Headers\Target.h
+  ..\Headers\Target_Manager.h
+  ..\Headers\Texture.h
+  ..\Headers\Timer.h
+  ..\Headers\Timer_Manager.h
+  ..\Headers\Transform.h
+  ..\Headers\VIBuffer.h
+  ..\Headers\VIBuffer_Cube.h
+  ..\Headers\VIBuffer_Rect.h
+  ..\Headers\VIBuffer_Terrain.h
+  ..\Headers\VIBuffer_ViewportRect.h
+         50개 파일이 복사되었습니다.
+  ..\Bin\Engine.lib
+  ..\Bin\fmodex_vc.lib
+          2개 파일이 복사되었습니다.
+  ..\Bin\Engine.dll
+  ..\Bin\fmodex.dll
+  ..\Bin\fmodexL.dll
+          3개 파일이 복사되었습니다.
+  ..\Bin\Engine.dll
+  ..\Bin\fmodex.dll
+  ..\Bin\fmodexL.dll
+          3개 파일이 복사되었습니다.
+  ..\Bin\Engine.dll
+  ..\Bin\fmodex.dll
+  ..\Bin\fmodexL.dll
+          3개 파일이 복사되었습니다.

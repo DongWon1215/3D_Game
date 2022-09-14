@@ -1,0 +1,643 @@
+﻿  AnimationControl.cpp
+  Base.cpp
+  Camera.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Camera.h(44): warning C4251: 'Engine::CCamera::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CCamera'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Camera.h(45): warning C4251: 'Engine::CCamera::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CCamera'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  Cell.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(47): warning C4251: 'Engine::CCell::m_vShareVector': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(48): warning C4251: 'Engine::CCell::m_vShareLine': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(49): warning C4251: 'Engine::CCell::m_vNormal': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  Collider.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMin': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMax': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  Component.cpp
+  Component_Manager.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): warning C4251: 'Engine::CTexture::m_Textures': class 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>'에서는 class 'Engine::CTexture'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): note: 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMin': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMax': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): warning C4251: 'Engine::CRenderer::m_RenderList': class 'std::list<Engine::CGameObject *,std::allocator<_Ty>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): note: 'std::list<Engine::CGameObject *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(48): warning C4251: 'Engine::CMesh_Dynamic::m_LocalMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): warning C4251: 'Engine::CMesh_Dynamic::m_MeshContainers': class 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): note: 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  Frustum.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+  Key.cpp
+  QuadTree.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+  Sound.cpp
+  Target.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  Target_Manager.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  VIBuffer_Cube.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+..\Codes\VIBuffer_Cube.cpp(115): warning C4305: 'return': 'HRESULT'에서 'Engine::_bool'(으)로 잘립니다.
+..\Codes\VIBuffer_Cube.cpp(121): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+..\Codes\VIBuffer_Cube.cpp(127): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+  GameObject.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): warning C4251: 'Engine::CTexture::m_Textures': class 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>'에서는 class 'Engine::CTexture'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): note: 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMin': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMax': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): warning C4251: 'Engine::CRenderer::m_RenderList': class 'std::list<Engine::CGameObject *,std::allocator<_Ty>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): note: 'std::list<Engine::CGameObject *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(48): warning C4251: 'Engine::CMesh_Dynamic::m_LocalMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): warning C4251: 'Engine::CMesh_Dynamic::m_MeshContainers': class 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): note: 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  Device.cpp
+  HierarchyLoader.cpp
+..\Codes\HierarchyLoader.cpp(199): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+  Input.cpp
+  Layer.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  Light.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+..\Codes\Light.cpp(18): warning C4244: '인수': 'DWORD'에서 'Engine::_float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  컴파일하고 있습니다...
+  Light_Manager.cpp
+  Management.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): warning C4251: 'Engine::CTexture::m_Textures': class 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>'에서는 class 'Engine::CTexture'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): note: 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMin': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMax': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): warning C4251: 'Engine::CRenderer::m_RenderList': class 'std::list<Engine::CGameObject *,std::allocator<_Ty>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): note: 'std::list<Engine::CGameObject *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(48): warning C4251: 'Engine::CMesh_Dynamic::m_LocalMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): warning C4251: 'Engine::CMesh_Dynamic::m_MeshContainers': class 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): note: 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  Mesh_Dynamic.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Mesh_Dynamic.h(48): warning C4251: 'Engine::CMesh_Dynamic::m_LocalMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Mesh_Dynamic.h(50): warning C4251: 'Engine::CMesh_Dynamic::m_MeshContainers': class 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Mesh_Dynamic.h(50): note: 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+..\Codes\Mesh_Dynamic.cpp(169): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\string.h(119): note: 'strcpy' 선언을 참조하십시오.
+  Mesh_Static.cpp
+  Navigation.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(47): warning C4251: 'Engine::CCell::m_vShareVector': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(48): warning C4251: 'Engine::CCell::m_vShareLine': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Cell.h(49): warning C4251: 'Engine::CCell::m_vNormal': struct 'D3DXVECTOR3'에서는 class 'Engine::CCell'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+  Object_Manager.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  Picking.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  PipeLine.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  Renderer.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Renderer.h(31): warning C4251: 'Engine::CRenderer::m_RenderList': class 'std::list<Engine::CGameObject *,std::allocator<_Ty>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Renderer.h(31): note: 'std::list<Engine::CGameObject *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+..\Codes\Renderer.cpp(69): warning C4244: '인수': 'DWORD'에서 'Engine::_float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  Scene.cpp
+  Shader.cpp
+  Texture.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Texture.h(21): warning C4251: 'Engine::CTexture::m_Textures': class 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>'에서는 class 'Engine::CTexture'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Texture.h(21): note: 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  Timer.cpp
+  Timer_Manager.cpp
+  Transform.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\..\Headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+..\Codes\Transform.cpp(133): warning C4244: '인수': 'Engine::_double'에서 'FLOAT'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+  VIBuffer.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+  VIBuffer_Rect.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+..\Codes\VIBuffer_Rect.cpp(93): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+..\Codes\VIBuffer_Rect.cpp(100): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+  VIBuffer_Terrain.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ViewMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\PipeLine.h(19): warning C4251: 'Engine::CPipeLine::m_ProjMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CPipeLine'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(23): warning C4251: 'Engine::CFrustum::m_vProjPoint': struct 'D3DXVECTOR3'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Frustum.h(25): warning C4251: 'Engine::CFrustum::m_Plane': struct 'D3DXPLANE'에서는 class 'Engine::CFrustum'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(472): note: 'D3DXPLANE' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): warning C4251: 'Engine::CGameObject::m_Components': class 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>'에서는 class 'Engine::CGameObject'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\GameObject.h(40): note: 'std::unordered_map<const Engine::_tchar *,Engine::CComponent *,std::hash<_Kty>,std::equal_to<_Kty>,std::allocator<std::pair<const _Kty,_Ty>>>' 선언을 참조하십시오.
+          with
+          [
+              _Kty=const Engine::_tchar *,
+              _Ty=Engine::CComponent *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): warning C4251: 'Engine::CTexture::m_Textures': class 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>'에서는 class 'Engine::CTexture'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Texture.h(21): note: 'std::vector<IDirect3DBaseTexture9 *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=IDirect3DBaseTexture9 *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMin': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Collider.h(61): warning C4251: 'Engine::CCollider::m_vMax': struct 'D3DXVECTOR3'에서는 class 'Engine::CCollider'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(162): note: 'D3DXVECTOR3' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): warning C4251: 'Engine::CRenderer::m_RenderList': class 'std::list<Engine::CGameObject *,std::allocator<_Ty>>'에서는 class 'Engine::CRenderer'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Renderer.h(31): note: 'std::list<Engine::CGameObject *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CGameObject *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(48): warning C4251: 'Engine::CMesh_Dynamic::m_LocalMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): warning C4251: 'Engine::CMesh_Dynamic::m_MeshContainers': class 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>'에서는 class 'Engine::CMesh_Dynamic'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Mesh_Dynamic.h(50): note: 'std::vector<Engine::D3DXMESHCONTAINER_DERIVED *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::D3DXMESHCONTAINER_DERIVED *
+          ]
+..\Codes\VIBuffer_Terrain.cpp(136): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+..\Codes\VIBuffer_Terrain.cpp(138): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+..\Codes\VIBuffer_Terrain.cpp(158): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+..\Codes\VIBuffer_Terrain.cpp(160): warning C4018: '<': signed 또는 unsigned가 일치하지 않습니다.
+..\Codes\VIBuffer_Terrain.cpp(247): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+..\Codes\VIBuffer_Terrain.cpp(273): warning C4800: 'BOOL': 'true' 또는 'false'로 bool 값을 강제하고 있습니다(성능 경고).
+  VIBuffer_ViewportRect.cpp
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): warning C4251: 'Engine::CNavigation::m_Cells': class 'std::vector<Engine::CCell *,std::allocator<_Ty>>'에서는 class 'Engine::CNavigation'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+  c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Navigation.h(34): note: 'std::vector<Engine::CCell *,std::allocator<_Ty>>' 선언을 참조하십시오.
+          with
+          [
+              _Ty=Engine::CCell *
+          ]
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\headers\Transform.h(66): warning C4251: 'Engine::CTransform::m_WorldMatrix': struct 'D3DXMATRIX'에서는 class 'Engine::CTransform'의 클라이언트에서 DLL 인터페이스를 사용하도록 지정해야 합니다.
+  c:\program files (x86)\microsoft directx sdk (june 2010)\include\d3dx9math.h(312): note: 'D3DXMATRIX' 선언을 참조하십시오.
+     ..\Bin\Engine.lib 라이브러리 및 ..\Bin\Engine.exp 개체를 생성하고 있습니다.
+  코드를 생성하고 있습니다.
+c:\users\ejddj\documents\visual studio 2015\projects\practice\engine\codes\collider.cpp(340): warning C4715: 'Engine::CCollider::Collision_Ray': 모든 제어 경로에서 값을 반환하지는 않습니다.
+  All 2910 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  코드를 생성했습니다.
+  Engine.vcxproj -> C:\Users\ejddj\Documents\Visual Studio 2015\Projects\Practice\Engine\Default\..\Bin\Engine.dll
+  Engine.vcxproj -> ..\Bin\Engine.pdb (Full PDB)

@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="99.Default">
+      <UniqueIdentifier>{539c7264-5595-4001-ad62-71bc2698bb69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Headers">
+      <UniqueIdentifier>{555d9d86-6d70-460b-b5eb-7b65de4f839c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="00.MainGame">
+      <UniqueIdentifier>{df102ee6-be80-4c63-8b84-82418ed7802c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene">
+      <UniqueIdentifier>{12fe8ad9-17ae-478e-a8ec-eaa080eb6447}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object">
+      <UniqueIdentifier>{8867c712-6124-49d0-bf40-c49f3b3455ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\00.Title">
+      <UniqueIdentifier>{aac002c9-5333-4aaa-8daa-fbb5fda5fd4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\01.Stage">
+      <UniqueIdentifier>{9f875833-d113-4183-9b98-07184fdad0c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\99.Loading">
+      <UniqueIdentifier>{1d1254a6-490d-4434-93eb-bdde34b043c4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\00.Static">
+      <UniqueIdentifier>{e1506822-4d1c-4f5b-b676-6ab7cfffdb89}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\01.Title">
+      <UniqueIdentifier>{8c01838b-1850-44d9-9f81-51afd60b23ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage">
+      <UniqueIdentifier>{bdaff96a-774e-4c1e-9655-d9334eb1fe81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\01.Title\00.Background">
+      <UniqueIdentifier>{52f1b6e2-257f-4769-b2eb-f16166203a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Camera">
+      <UniqueIdentifier>{6dbbb543-a07f-41b2-bba9-03fac781d587}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Terrain">
+      <UniqueIdentifier>{e6eea53b-1b63-48c2-b093-7c178b03ab32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Player">
+      <UniqueIdentifier>{546cb765-131b-4a93-a12e-f638c203ee41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="98.Headers\Shader">
+      <UniqueIdentifier>{128ff3e9-3b8b-47d1-8c76-bdd9b1d6981d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Weapon">
+      <UniqueIdentifier>{7dfbe31d-999d-459c-ae85-5f321aca4b50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Weapon\Pistol">
+      <UniqueIdentifier>{ef83e08d-5e69-488a-8e2c-1d45beb45b6d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Weapon\Riffle">
+      <UniqueIdentifier>{fab8b1cd-86d2-4da1-a258-5efc84c2ac81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Weapon\Sniper">
+      <UniqueIdentifier>{a6a340ba-4cd8-44a9-a917-4ae52395c68d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Monster">
+      <UniqueIdentifier>{770da6e5-b89d-4bb2-9644-99b1ef5f394e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Sky">
+      <UniqueIdentifier>{b1879488-81b5-460c-b03a-51c2de2b7235}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object">
+      <UniqueIdentifier>{6f4dbcb0-8943-43c2-94f7-1cc3a870bed2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Wall">
+      <UniqueIdentifier>{95b63807-a24b-4734-8087-adb1dfee41ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Monster\Boss">
+      <UniqueIdentifier>{56a6c11a-ebdf-48ed-86e7-dd5621764e7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI">
+      <UniqueIdentifier>{f0f38a7c-9911-4098-9b4e-557156418821}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\ProgressBar">
+      <UniqueIdentifier>{5ffa86fb-0468-4bbb-b440-9062e7dd243b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\Progress">
+      <UniqueIdentifier>{3670dd1d-9138-4b08-8862-e8102a97a6dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\BurningCar">
+      <UniqueIdentifier>{952c4787-8767-4cb6-9cef-7bfa03a99656}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Fence">
+      <UniqueIdentifier>{92ab973c-027f-4b49-971e-79e69bc0f87c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\BrokenFence">
+      <UniqueIdentifier>{3d834976-69bb-4fa6-969e-cd4309f80e85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\House">
+      <UniqueIdentifier>{f12f793e-5993-4e99-8c81-c5af8e171a05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Light_Street">
+      <UniqueIdentifier>{b005b685-13cb-4d3a-8df6-1e7dd7379f7e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\ManHole">
+      <UniqueIdentifier>{49e6b4af-c1d2-4b1b-bb0f-0772f7bd4c2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Museum">
+      <UniqueIdentifier>{cd106d51-040d-409c-a06e-5612382ec525}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Tree">
+      <UniqueIdentifier>{cf2aaadf-73d7-4318-aa43-3b7628e652a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Prision">
+      <UniqueIdentifier>{7149e91c-cfd1-48ae-b8b6-2730f8720a44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Crane">
+      <UniqueIdentifier>{fbdf7ae7-0532-4d30-a779-65722e5d5436}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\BrokenHouse">
+      <UniqueIdentifier>{99b94fc1-3c7b-4c4b-ac06-c4710e0cb217}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\BurningCar2">
+      <UniqueIdentifier>{a107c5a6-58fc-458f-b977-42a8c9ba134b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\IceCream_Van">
+      <UniqueIdentifier>{fc797166-31e6-4c07-9533-3a8e9e73ab6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\MetalWall">
+      <UniqueIdentifier>{5552a046-044f-4b18-b726-cb7d873c2f80}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Sign">
+      <UniqueIdentifier>{a9600202-41e3-4e32-9572-bf35c1e4d1c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Monster\Skeleton">
+      <UniqueIdentifier>{3ae25be0-2bee-4245-b87d-9fd4994ea506}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Bullet">
+      <UniqueIdentifier>{25f2cae4-9740-49d2-9ac1-3013ebb3ead7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\HitScreen">
+      <UniqueIdentifier>{39fdcf46-a814-4d60-aa21-18905781a649}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\BulletResiduum">
+      <UniqueIdentifier>{4c79a47b-9f72-4991-8eb4-252d7ba71390}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Object\Box">
+      <UniqueIdentifier>{3150e215-ffda-4955-9362-28972722e6ae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Effect">
+      <UniqueIdentifier>{1e5d9d9a-7e03-4c31-9a59-a726fa3e21ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\Effect\Bleeding">
+      <UniqueIdentifier>{ba13b95c-67c9-4216-8d40-4bc88bffad01}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\Font">
+      <UniqueIdentifier>{290bdf45-b7ba-4606-841c-0487c639a6a0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\MiniGame">
+      <UniqueIdentifier>{bd91f2ee-37e0-4a1a-af72-56122fcb2baa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="01.Scene\02.BossScene">
+      <UniqueIdentifier>{8ec5c726-7740-436a-a673-44d17403ee26}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\BossHpBar">
+      <UniqueIdentifier>{35167048-34b0-49a5-9297-903a69b3567a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\AimingPoint">
+      <UniqueIdentifier>{8a185bfa-3ce4-4f4b-b69e-0f602e2aff20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02.Object\02.Stage\UI\Wave">
+      <UniqueIdentifier>{f9449b9e-f252-4d81-81a3-71f5c17a40b8}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Client.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>99.Default</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MainGame.h">
+      <Filter>00.MainGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Client_Extend.h">
+      <Filter>98.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Stage.h">
+      <Filter>01.Scene\01.Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Loading.h">
+      <Filter>01.Scene\99.Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BackGround.h">
+      <Filter>02.Object\01.Title\00.Background</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Camera_Free.h">
+      <Filter>02.Object\02.Stage\Camera</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Terrain.h">
+      <Filter>02.Object\02.Stage\Terrain</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Player.h">
+      <Filter>02.Object\02.Stage\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Title.h">
+      <Filter>01.Scene\00.Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Monster.h">
+      <Filter>02.Object\02.Stage\Monster</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Sniper.h">
+      <Filter>02.Object\02.Stage\Weapon\Sniper</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Pistol.h">
+      <Filter>02.Object\02.Stage\Weapon\Pistol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Riffle.h">
+      <Filter>02.Object\02.Stage\Weapon\Riffle</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Sky.h">
+      <Filter>02.Object\02.Stage\Sky</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Burning_Car.h">
+      <Filter>02.Object\02.Stage\Object\BurningCar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Burning_Car_2.h">
+      <Filter>02.Object\02.Stage\Object\BurningCar2</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Crane_Cabin.h">
+      <Filter>02.Object\02.Stage\Object\Crane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Crane_Leg.h">
+      <Filter>02.Object\02.Stage\Object\Crane</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Fence.h">
+      <Filter>02.Object\02.Stage\Object\Fence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House_Broken.h">
+      <Filter>02.Object\02.Stage\Object\BrokenHouse</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Fence_Broken.h">
+      <Filter>02.Object\02.Stage\Object\BrokenFence</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House2.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House3.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House4.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House5.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\House6.h">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Lighting_Street.h">
+      <Filter>02.Object\02.Stage\Object\Light_Street</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Lighting_Street2.h">
+      <Filter>02.Object\02.Stage\Object\Light_Street</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\ManHole.h">
+      <Filter>02.Object\02.Stage\Object\ManHole</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Museum.h">
+      <Filter>02.Object\02.Stage\Object\Museum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Tree.h">
+      <Filter>02.Object\02.Stage\Object\Tree</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Wall.h">
+      <Filter>02.Object\02.Stage\Object\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Wall_Big.h">
+      <Filter>02.Object\02.Stage\Object\Wall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\PrisonWall_Small.h">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\PrisonFence.h">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\PrisonFense_Round.h">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\PrisonWall_Big.h">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\IceCream_Van.h">
+      <Filter>02.Object\02.Stage\Object\IceCream_Van</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MetalWall.h">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MetalWall2.h">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MetalWall3.h">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\MetalWall4.h">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Sign.h">
+      <Filter>02.Object\02.Stage\Object\Sign</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Boss.h">
+      <Filter>02.Object\02.Stage\Monster\Boss</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Bullet.h">
+      <Filter>02.Object\02.Stage\Bullet</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Progress.h">
+      <Filter>02.Object\02.Stage\UI\Progress</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\HitScreen.h">
+      <Filter>02.Object\02.Stage\UI\HitScreen</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\HPBar.h">
+      <Filter>02.Object\02.Stage\UI\ProgressBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BulletResiduum.h">
+      <Filter>02.Object\02.Stage\UI\BulletResiduum</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Bleeding.h">
+      <Filter>02.Object\02.Stage\Effect\Bleeding</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Box.h">
+      <Filter>02.Object\02.Stage\Object\Box</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Font.h">
+      <Filter>02.Object\02.Stage\UI\Font</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BoxPuzzle.h">
+      <Filter>02.Object\02.Stage\MiniGame</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BossScene.h">
+      <Filter>01.Scene\02.BossScene</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BossLoading.h">
+      <Filter>01.Scene\99.Loading</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\BossHpBar.h">
+      <Filter>02.Object\02.Stage\UI\BossHpBar</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\AmingPoint.h">
+      <Filter>02.Object\02.Stage\UI\AimingPoint</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Headers\Wave.h">
+      <Filter>02.Object\02.Stage\UI\Wave</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Client.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>99.Default</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MainGame.cpp">
+      <Filter>00.MainGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Stage.cpp">
+      <Filter>01.Scene\01.Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Loading.cpp">
+      <Filter>01.Scene\99.Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\BackGround.cpp">
+      <Filter>02.Object\01.Title\00.Background</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Camera_Free.cpp">
+      <Filter>02.Object\02.Stage\Camera</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Terrain.cpp">
+      <Filter>02.Object\02.Stage\Terrain</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Player.cpp">
+      <Filter>02.Object\02.Stage\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Title.cpp">
+      <Filter>01.Scene\00.Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Monster.cpp">
+      <Filter>02.Object\02.Stage\Monster</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Sniper.cpp">
+      <Filter>02.Object\02.Stage\Weapon\Sniper</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Pistol.cpp">
+      <Filter>02.Object\02.Stage\Weapon\Pistol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Riffle.cpp">
+      <Filter>02.Object\02.Stage\Weapon\Riffle</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Sky.cpp">
+      <Filter>02.Object\02.Stage\Sky</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Burning_Car.cpp">
+      <Filter>02.Object\02.Stage\Object\BurningCar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Burning_Car_2.cpp">
+      <Filter>02.Object\02.Stage\Object\BurningCar2</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Crane_Cabin.cpp">
+      <Filter>02.Object\02.Stage\Object\Crane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Crane_Leg.cpp">
+      <Filter>02.Object\02.Stage\Object\Crane</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Fence.cpp">
+      <Filter>02.Object\02.Stage\Object\Fence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House_Broken.cpp">
+      <Filter>02.Object\02.Stage\Object\BrokenHouse</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Fence_Broken.cpp">
+      <Filter>02.Object\02.Stage\Object\BrokenFence</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House2.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House3.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House4.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House5.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\House6.cpp">
+      <Filter>02.Object\02.Stage\Object\House</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Lighting_Street.cpp">
+      <Filter>02.Object\02.Stage\Object\Light_Street</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Lighting_Street2.cpp">
+      <Filter>02.Object\02.Stage\Object\Light_Street</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\ManHole.cpp">
+      <Filter>02.Object\02.Stage\Object\ManHole</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Museum.cpp">
+      <Filter>02.Object\02.Stage\Object\Museum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Tree.cpp">
+      <Filter>02.Object\02.Stage\Object\Tree</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Wall.cpp">
+      <Filter>02.Object\02.Stage\Object\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Wall_Big.cpp">
+      <Filter>02.Object\02.Stage\Object\Wall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\PrisonFence.cpp">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\PrisonFense_Round.cpp">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\PrisonWall_Big.cpp">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\PrisonWall_Small.cpp">
+      <Filter>02.Object\02.Stage\Object\Prision</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\IceCream_Van.cpp">
+      <Filter>02.Object\02.Stage\Object\IceCream_Van</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MetalWall.cpp">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MetalWall2.cpp">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MetalWall3.cpp">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\MetalWall4.cpp">
+      <Filter>02.Object\02.Stage\Object\MetalWall</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Sign.cpp">
+      <Filter>02.Object\02.Stage\Object\Sign</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Boss.cpp">
+      <Filter>02.Object\02.Stage\Monster\Boss</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Bullet.cpp">
+      <Filter>02.Object\02.Stage\Bullet</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Progress.cpp">
+      <Filter>02.Object\02.Stage\UI\Progress</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\HitScreen.cpp">
+      <Filter>02.Object\02.Stage\UI\HitScreen</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\HPBar.cpp">
+      <Filter>02.Object\02.Stage\UI\ProgressBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\BulletResiduum.cpp">
+      <Filter>02.Object\02.Stage\UI\BulletResiduum</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Bleeding.cpp">
+      <Filter>02.Object\02.Stage\Effect\Bleeding</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Box.cpp">
+      <Filter>02.Object\02.Stage\Object\Box</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Font.cpp">
+      <Filter>02.Object\02.Stage\UI\Font</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\BoxPuzzle.cpp">
+      <Filter>02.Object\02.Stage\MiniGame</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\BossScene.cpp">
+      <Filter>01.Scene\02.BossScene</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\BossLoading.cpp">
+      <Filter>01.Scene\99.Loading</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Boss_HpBar.cpp">
+      <Filter>02.Object\02.Stage\UI\BossHpBar</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\AimingPoint.cpp">
+      <Filter>02.Object\02.Stage\UI\AimingPoint</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Codes\Wave.cpp">
+      <Filter>02.Object\02.Stage\UI\Wave</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Client.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+    <Image Include="small.ico">
+      <Filter>99.Default</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Client.rc">
+      <Filter>99.Default</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>99.Default</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\Shader\Shader_Default.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Shader_Mesh.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Shader_Terrain.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Shader_Sky.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Shader_Collider.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+    <FxCompile Include="..\Bin\Shader\Shader_Effect.fx">
+      <Filter>98.Headers\Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
